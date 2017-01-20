@@ -1,0 +1,6 @@
+DB_HOST="localhost"
+DB_NAME="mydb"
+DB_USER="root"
+DB_PASS="mypass"
+DB_TEST="mydb-test"
+MYSQL_CLI_CREDENTIALS=false
