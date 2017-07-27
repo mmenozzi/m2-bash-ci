@@ -9,7 +9,7 @@ fi;
 
 function mysql_cli {
     if [ "${MYSQL_CLI_CREDENTIALS}" = true ] ; then
-        mysql -h ${DB_HOST} -u ${DB_USER} -p${DB_PASS} -e "$1"
+        mysql -h ${DB_HOST} -u ${DB_USER} --password=${DB_PASS} -e "$1"
     else
         mysql -e "$1"
     fi;
