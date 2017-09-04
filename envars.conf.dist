@@ -4,3 +4,4 @@ DB_USER="root"
 DB_PASS="mypass"
 DB_TEST="mydb-test"
 MYSQL_CLI_CREDENTIALS=false
+BASE_URL="http://localhost/"

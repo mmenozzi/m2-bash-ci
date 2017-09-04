@@ -28,6 +28,7 @@ php bin/magento setup:install --db-host="${DB_HOST}" --db-name="${DB_NAME}" --db
 ${MAGENTO_INSTALL_DB_PASSWORD} --admin-firstname="Magento" --admin-lastname="User" --admin-email="user@example.com" \
 --admin-user="admin" --admin-password="admin123" --use-rewrites="1"
 php bin/magento deploy:mode:set developer
+php bin/magento setup:store-config:set --base-url="${BASE_URL}"
 rm -f ${SCRIPT_DIR}/dev/tests/integration/etc/install-config-mysql.php
 cp -f ${SCRIPT_DIR}/dev/tests/integration/etc/install-config-mysql.php.dist ${SCRIPT_DIR}/dev/tests/integration/etc/install-config-mysql.php
 sed -i -e  "s/'db-host' => '.*'/'db-host' => '${DB_HOST}'/" ${SCRIPT_DIR}/dev/tests/integration/etc/install-config-mysql.php
