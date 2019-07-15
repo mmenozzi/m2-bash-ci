@@ -34,3 +34,7 @@ sed -i -e  "s/'db-host' => '.*'/'db-host' => '${DB_HOST}'/" dev/tests/integratio
 sed -i -e  "s/'db-user' => '.*'/'db-user' => '${DB_USER}'/" dev/tests/integration/etc/install-config-mysql.php
 sed -i -e  "s/'db-password' => '.*'/'db-password' => '${DB_PASS}'/" dev/tests/integration/etc/install-config-mysql.php
 sed -i -e  "s/'db-name' => '.*'/'db-name' => '${DB_TEST}'/" dev/tests/integration/etc/install-config-mysql.php
+sed -i -e  "s/'amqp-host' => '.*'/'amqp-host' => ''/" dev/tests/integration/etc/install-config-mysql.php
+sed -i -e  "s/'amqp-port' => '.*'/'amqp-port' => ''/" dev/tests/integration/etc/install-config-mysql.php
+sed -i -e  "s/'amqp-user' => '.*'/'amqp-user' => ''/" dev/tests/integration/etc/install-config-mysql.php
+sed -i -e  "s/'amqp-password' => '.*'/'amqp-password' => ''/" dev/tests/integration/etc/install-config-mysql.php
